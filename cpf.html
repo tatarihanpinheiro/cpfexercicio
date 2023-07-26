@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Validação de CPF</title>
-
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <img src="logo.png" alt="Logo" id="logo">
   <h1>Validação de CPF</h1>
   <label for="cpf">Digite o CPF:</label>
   <input type="text" id="cpf">
@@ -19,7 +18,7 @@
     function validarCPF() {
       const cpf = document.getElementById('cpf').value;
       
-    
+
       if (cpf === '12430456710') {
         document.getElementById('resultado').textContent = 'CPF válido!';
       } else {
